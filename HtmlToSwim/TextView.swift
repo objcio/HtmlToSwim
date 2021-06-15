@@ -8,6 +8,10 @@
 import SwiftUI
 import Cocoa
 
+/*
+ Taken from https://oliver-epper.de/posts/wrap-nstextview-in-swiftui/
+ */
+
 class EditorController: NSViewController {
     var textView = NSTextView()
     
