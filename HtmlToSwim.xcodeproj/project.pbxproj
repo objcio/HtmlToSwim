@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		17DF6EF32677410600E5202A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17DF6EF12677410600E5202A /* Main.storyboard */; };
 		17DF6EFD2677419800E5202A /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF6EFC2677419800E5202A /* TextView.swift */; };
 		17DF6F00267748FE00E5202A /* LineNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF6EFF267748FE00E5202A /* LineNumbers.swift */; };
+		83BA5C0329BB3C220051467F /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 83BA5C0229BB3C220051467F /* SwiftSoup */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83BA5C0329BB3C220051467F /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +98,9 @@
 			dependencies = (
 			);
 			name = HtmlToSwim;
+			packageProductDependencies = (
+				83BA5C0229BB3C220051467F /* SwiftSoup */,
+			);
 			productName = HtmlToSwim;
 			productReference = 17DF6EE52677410400E5202A /* HtmlToSwim.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 17DF6EDC2677410400E5202A;
+			packageReferences = (
+				83BA5C0129BB3C220051467F /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = 17DF6EE62677410400E5202A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -352,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		83BA5C0129BB3C220051467F /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		83BA5C0229BB3C220051467F /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83BA5C0129BB3C220051467F /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 17DF6EDD2677410400E5202A /* Project object */;
 }
